@@ -1,4 +1,7 @@
-const position = { x: 0, y: 0 }
+// const position = { x: 0, y: 0 }
+const cameraposition = { x: 0, y: 0 }
+const bottleposition = { x: 0, y: 0 }
+
 
 //camera
 interact('#camera').draggable({
@@ -11,11 +14,11 @@ interact('#camera').draggable({
 
       },
       move (event) {
-        position.x += event.dx
-        position.y += event.dy
+        cameraposition.x += event.dx
+        cameraposition.y += event.dy
   
         event.target.style.transform =
-          `translate(${position.x}px, ${position.y}px)`
+          `translate(${cameraposition.x}px, ${cameraposition.y}px)`
       },
       end(event){
         console.log(event.type, event.target);
@@ -38,11 +41,11 @@ interact('#camera').draggable({
 
       },
       move (event) {
-        position.x += event.dx
-        position.y += event.dy
+        bottleposition.x += event.dx
+        bottleposition.y += event.dy
   
         event.target.style.transform =
-          `translate(${position.x}px, ${position.y}px)`
+          `translate(${bottleposition.x}px, ${bottleposition.y}px)`
       },
       end(event){
         console.log(event.type, event.target);
@@ -93,8 +96,8 @@ function handleDrop(event) {
   draggableElement.style.opacity = 0;
 
   
-console.log($('.draggable'));
-  $('.draggable').css('transform', 'translate(0px, 0px)');
+// console.log($('.draggable'));
+//   $('.draggable').css('transform', 'translate(0px, 0px)');
 
   // Do something when a draggable element is dropped into a drop zone
   console.log('Dropped into dropzone:', dropzoneElement);
