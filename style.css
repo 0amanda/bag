@@ -1,33 +1,175 @@
-
-.container{
+.container {
   position: absolute;
-  top: 300px;
-  left: 700px;
+  top: 100px;
+  left: 600px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(12, 1fr); */
+  /* grid-template-columns: repeat(auto-fit, 186px); */
   display: flex;
-  background-color:antiquewhite
-
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0;
+  background-color: antiquewhite;
+  width: 800px;
+  height: 700px;
 }
 
 .draggable {
   touch-action: none;
   user-select: none;
   cursor: move;
-  margin: 1rem;
 }
 
-.camera {
-width: 100px;
-height: 100px;
+.grid-item{
+ width: 50px; 
 }
 
+.grid-item--width{
+  width: 50px;
+}
 
+.grid-item--width2{
+  width: 100px;
+}
 
-.bottle{
+.grid-item--width3{
+  width: 150px;
+}
+
+.grid-item--width3{
+  width: 150px;
+}
+
+.grid-item--width4{
+  width: 200px;
+}
+
+.grid-item--height{
+  height: 50px;
+}
+
+.grid-item--height2{
+  height: 100px;
+}
+
+.grid-item--height3{
+  height: 150px;
+}
+
+.grid-item--height4{
+  height: 200px;
+}
+
+.grid-item--height5{
+  height: 250px;
+}
+
+.camera img{
+  width: 100px;
+  object-fit: cover;
+}
+
+.bottle img{
+  height: 200px;
+  object-fit: cover;
+}
+
+.hairclip img{
+width: 75px;
+object-fit: cover;
+}
+
+.candy img{
+  width: 50px;
+  object-fit: cover;
+}
+
+.chapstick {
+  width: 50px;
+ 
+}
+
+.cookie {
+  width: 50px;
+  
+}
+
+.crochet {
+  width: 100px;
+  
+}
+
+.crystals {
   width: 100px;
 
-
 }
 
+.fork {
+  width: 170px;
+}
+
+.handlotion {
+  width: 70px;
+}
+
+.hellokitty {
+  width: 50px;
+}
+
+.lippencil {
+  width: 100px;
+}
+
+.lipstick {
+  width: 100px;
+}
+
+.markerpens {
+  width: 100px;
+}
+
+.mirror {
+  width: 70px;
+}
+
+.mymelodysticker {
+  width: 30px;
+}
+
+.nailfile {
+  width: 100px;
+  background-color: aqua;
+}
+
+.nailpolish {
+  width: 40px;
+}
+
+.nails {
+  width: 50px;
+}
+
+.numberpager {
+  width: 100px;
+}
+
+.pen {
+  width: 150px;
+  background-color: aliceblue;
+}
+
+.receipt {
+  width: 100px;
+}
+
+.smallpurse {
+  width: 250px;
+background-color: aqua;
+}
+
+.soysauce {
+  width: 70px;
+}
 
 .dropzone {
   width: 500px;
@@ -40,21 +182,20 @@ height: 100px;
   border-color: blue;
 }
 
-p{
+p {
   position: absolute;
-  top: 500px;
+  top: 40px;
   font-family: Arial, Helvetica, sans-serif;
-  left: 50%;
-
+  left: 70%;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.draggable-text {
+/* .draggable-text {
   position: fixed;
   left: 50%;
-  bottom: 30%;
+  top: 30%;
   transform: translateX(-50%);
-}
+} */

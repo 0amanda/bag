@@ -13,6 +13,7 @@
       src="https://unpkg.com/spritespin@x.x.x/release/spritespin.js"
       type="text/javascript"
     ></script>
+    <script src="/path/to/masonry.pkgd.min.js"></script>
 
     <script src="main.js" defer></script>
 
@@ -23,23 +24,264 @@
       <img src="bagrisogif.gif" alt="" />
     </div>
 
-    <div class="container">
-      <div id="camera" class="draggable camera">
-        <img class="camera gif" src="items/digitalcamera.gif" alt="small digital camera"></div>
+    <!-- items -->
+    <div class="container grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 50 }'>
 
-      <div id="bottle" class="draggable bottle">
-        <img class="bottle gif" src="items/waterbottle.gif" alt="black saic water bottle">
+      <div id="camera" class="draggable camera grid-item grid-item--height2 grid-item--width">
+        <img
+          class="camera gif"
+          src="items/digitalcamera.gif"
+          alt="small digital camera"
+        />
       </div>
+
+      <div id="bottle" class="draggable bottle grid-item grid-item--height4 grid-item--width">
+        <img
+          class="bottle gif"
+          src="items/waterbottle.gif"
+          alt="black saic water bottle"
+        />
+      </div>
+
+      <div id="candy" class="draggable candy grid-item grid-item--width">
+        <img class="candy gif" src="items/candy.gif" alt="candy" />
+      </div>
+
+      <div id="chapstick" class="draggable chapstick grid-item grid-item--width">
+        <img class="chapstick gif" src="items/chapstick.gif" alt="chapstick" />
+      </div>
+
+      <div id="cookie" class="draggable cookie grid-item grid-item--width grid-item--height2">
+        <img class="cookie gif" src="items/cookie.gif" alt="cookie" />
+      </div>
+
+      <div id="hairclip" class="draggable hairclip grid-item grid-item--width grid-item--height2">
+        <img
+          class="hairclip gif"
+          src="items/hairclip.gif"
+          alt="hair claw clip"
+        />
+      </div>
+
+      <div id="crochet" class="draggable crochet grid-item grid-item--width">
+        <img class="crochet gif" src="items/crochet.gif" alt="crochet" />
+      </div>
+
+      <div id="crystals" class="draggable crystals grid-item grid-item--width">
+        <img class="crystals gif" src="items/crystals.gif" alt="crystals" />
+      </div>
+
+      <div id="handlotion" class="draggable handlotion grid-item grid-item--width">
+        <img
+          class="handlotion gif"
+          src="items/handlotion.gif"
+          alt="hand lotion"
+        />
+      </div>
+
+      <div id="hellokitty" class="draggable hellokitty grid-item grid-item--width grid-item--height2">
+        <img
+          class="hellokitty gif"
+          src="items/hellokitty.gif"
+          alt="hello kitty figurine"
+        />
+      </div>
+
+      <div id="lippencil" class="draggable lippencil grid-item grid-item--width">
+        <img
+          class="lippencil gif"
+          src="items/lippencil.gif"
+          alt="lip pencils"
+        />
+      </div>
+
+      <div id="lipstick" class="draggable lipstick grid-item grid-item--width">
+        <img class="lipstick gif" src="items/lipstick.gif" alt="lipstick" />
+      </div>
+
+      <div id="markerpens" class="draggable markerpens grid-item grid-item--width">
+        <img
+          class="markerpens gif"
+          src="items/markerpens.gif"
+          alt="marker and pens"
+        />
+      </div>
+
+      <div id="mirror" class="draggable mirror grid-item grid-item--width">
+        <img
+          class="mirror gif"
+          src="items/mirror.gif"
+          alt="small round mirror"
+        />
+      </div>
+
+      <div id="mymelodysticker" class="draggable mymelodysticker grid-item grid-item--width">
+        <img
+          class="mymelodysticker gif"
+          src="items/mymelodysticker.gif"
+          alt="my meylody sticker"
+        />
+      </div>
+
+      <div id="nailfile" class="draggable nailfile grid-item grid-item--width grid-item--height">
+        <img
+          class="nailfile gif"
+          src="items/nailfile.gif"
+          alt="glass nail file"
+        />
+      </div>
+
+      <div id="nailpolish" class="draggable nailpolish grid-item grid-item--width">
+        <img
+          class="nailpolish gif"
+          src="items/nailpolish.gif"
+          alt="nail polish"
+        />
+      </div>
+
+      <div id="soysauce" class="draggable soysauce grid-item grid-item--width">
+        <img
+          class="soysauce gif"
+          src="items/soysauce.gif"
+          alt="soysauce packets" />
+      </div>
+
+      <div id="nails" class="draggable nails grid-item grid-item--width">
+        <img
+          class="nails gif"
+          src="items/nails.gif"
+          alt="popped off nail polish"
+        />
+      </div>
+
+      <div id="pen" class="draggable pen grid-item grid-item--width grid-item--height">
+        <img class="pen gif" src="items/pen.gif" alt="distilate pen " />
+      </div>
+      
+
+      <div id="receipt" class="draggable receipt grid-item grid-item--width">
+        <img class="receipt gif" src="items/receipt.gif" alt="crumpled receipt" />
+      </div>
+
+      <div id="fork" class="draggable fork grid-item grid-item--width">
+        <img class="fork gif" src="items/fork.gif" alt="fork utensil set" />
+      </div>
+
+      <div id="smallpurse" class="draggable smallpurse grid-item grid-item--width grid-item--height5">
+        <img
+          class="smallpurse gif"
+          src="items/smallpurse.gif"
+          alt="small black purse"
+        />
+      </div>
+
+      <div id="numberpager" class="draggable numberpager grid-item grid-item--width">
+        <img
+          class="numberpager gif"
+          src="items/numberpager.gif"
+          alt="folded paper"
+        />
+      </div>
+  
+
     </div>
+
+    <!-- text -->
 
     <div id="cameratext" class="hidden">
       <p>small digital camera</p>
     </div>
 
     <div id="bottletext" class="hidden">
-        <p>bottle</p>
+      <p>bottle</p>
+    </div>
+
+    <div id="haircliptext" class="hidden">
+      <p>hair clip</p>
+    </div>
+
+    <div id="candytext" class="hidden">
+      <p>candy</p>
+    </div>
+
+    <div id="chapsticktext" class="hidden">
+      <p>chapstick</p>
+    </div>
+
+    <div id="cookietext" class="hidden">
+      <p>cookie</p>
+    </div>
+
+    <div id="crochettext" class="hidden">
+      <p>crochet hooks and yarn</p>
+    </div>
+
+    <div id="crystalstext" class="hidden">
+      <p>crystals</p>
+    </div>
+
+    <div id="forktext" class="hidden">
+      <p>fork and chopstick set</p>
+    </div>
+
+    <div id="handlotiontext" class="hidden">
+      <p>hand lotion</p>
+    </div>
+
+    <div id="hellokittytext" class="hidden">
+      <p>small hello kitty figiurine from a blind box</p>
+    </div>
+
+    <div id="lippenciltext" class="hidden">
+      <p>lip pencils</p>
+
+      <div id="lipsticktext" class="hidden">
+        <p>lipsticks</p>
       </div>
 
-  </body>
+      <div id="markerpentext" class="hidden">
+        <p>markers and pens</p>
+      </div>
 
+      <div id="mirrortext" class="hidden">
+        <p>small round mirror</p>
+      </div>
+
+      <div id="mymelodystickertext" class="hidden">
+        <p>my melody sticker</p>
+      </div>
+
+      <div id="nailfiletext" class="hidden">
+        <p>glass nail file</p>
+      </div>
+
+      <div id="nailpolishtext" class="hidden">
+        <p>nailpolish</p>
+      </div>
+
+      <div id="nailstext" class="hidden">
+        <p>popped off nail polish</p>
+      </div>
+
+      <div id="numberpagertext" class="hidden">
+        <p>random guy's number</p>
+      </div>
+
+      <div id="pentext" class="hidden">
+        <p>distilate pen</p>
+      </div>
+
+      <div id="receipttext" class="hidden">
+        <p>crumpled receipts</p>
+      </div>
+
+      <div id="smallpursetext" class="hidden">
+        <p>small black purse</p>
+      </div>
+
+      <div id="soysaucetext" class="hidden">
+        <p>soy sauce packets</p>
+      </div>
+    </div>
+  </body>
 </html>

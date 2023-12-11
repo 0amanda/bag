@@ -1,6 +1,7 @@
 // const position = { x: 0, y: 0 }
 const cameraposition = { x: 0, y: 0 }
 const bottleposition = { x: 0, y: 0 }
+const hairclipposition = { x: 0, y: 0 }
 
 
 //camera
@@ -30,7 +31,7 @@ interact('#camera').draggable({
     
   })
 
-  //second object
+  //bottle
   interact('#bottle').draggable({
     listeners: {
       start (event) {
@@ -50,12 +51,49 @@ interact('#camera').draggable({
       end(event){
         console.log(event.type, event.target);
           //hide paragraph
-        const paragraph = document.getElementById('cameratext');
+        const paragraph = document.getElementById('bottletext');
         paragraph.style.display = 'none';
       }
     }
     
   })
+
+  //hairclip
+  interact('#hairclip').draggable({
+    listeners: {
+      start (event) {
+        console.log(event.type, event.target)
+                // Show paragraph
+      const paragraph = document.getElementById('haircliptext');
+      paragraph.style.display = 'inline';
+
+      },
+      move (event) {
+        hairclipposition.x += event.dx
+        hairclipposition.y += event.dy
+  
+        event.target.style.transform =
+          `translate(${hairclipposition.x}px, ${hairclipposition.y}px)`
+      },
+      end(event){
+        console.log(event.type, event.target);
+          //hide paragraph
+        const paragraph = document.getElementById('haircliptext');
+        paragraph.style.display = 'none';
+      }
+    }
+    
+  })
+
+
+
+
+  
+
+
+
+  //dropzone
+
 
   interact('.dropzone')
   .dropzone({
@@ -104,5 +142,9 @@ function handleDrop(event) {
   console.log("draggable element: ", draggableElement)
 }
 
-    
+$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 50
+});
   
