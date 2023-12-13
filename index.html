@@ -13,15 +13,18 @@
       src="https://unpkg.com/spritespin@x.x.x/release/spritespin.js"
       type="text/javascript"
     ></script>
-    <script src="/path/to/masonry.pkgd.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="../spritespin.js" type="text/javascript"></script>
 
     <script src="main.js" defer></script>
 
     <title>bag</title>
   </head>
   <body>
-    <div class="dropzone">
-      <img src="bagrisogif.gif" alt="" />
+    <div id="mySpriteSpin" class="dropzone">
+
     </div>
 
     <!-- items -->
@@ -41,12 +44,23 @@
 
       <div
         id="bottle"
-        class="draggable bottle  --height4 --width"
+        class="draggable bottle"
       >
         <img
           class="bottle gif"
           src="items/waterbottle.gif"
           alt="black saic water bottle"
+        />
+      </div>
+
+      <div
+        id="numberpager"
+        class="draggable numberpager"
+      >
+        <img
+          class="numberpager gif"
+          src="items/numberpager.gif"
+          alt="folded paper"
         />
       </div>
 
@@ -167,7 +181,7 @@
 
       <div
         id="nailpolish"
-        class="draggable nailpolish  --width"
+        class="draggable nailpolish"
       >
         <img
           class="nailpolish gif"
@@ -222,19 +236,10 @@
         />
       </div>
 
-      <div
-        id="numberpager"
-        class="draggable numberpager"
-      >
-        <img
-          class="numberpager gif"
-          src="items/numberpager.gif"
-          alt="folded paper"
-        />
-      </div>
+    
     </div>
 
-    <!-- text -->
+      
 
     <div id="cameratext" class="hidden">
       <p>small digital camera</p>
@@ -332,4 +337,5 @@
       <p>soy sauce packets</p>
     </div>
   </body>
+
 </html>
