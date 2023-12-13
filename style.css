@@ -9,6 +9,9 @@
   flex-wrap: wrap;
   flex-direction: column;
   gap: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  max-width: 800px;
   background-color: antiquewhite;
   width: 800px;
   height: 700px;
@@ -18,50 +21,12 @@
   touch-action: none;
   user-select: none;
   cursor: move;
+  position: relative;
 }
 
-.grid-item{
- width: 50px; 
-}
+.draggable img{
 
-.grid-item--width{
-  width: 50px;
-}
-
-.grid-item--width2{
-  width: 100px;
-}
-
-.grid-item--width3{
-  width: 150px;
-}
-
-.grid-item--width3{
-  width: 150px;
-}
-
-.grid-item--width4{
-  width: 200px;
-}
-
-.grid-item--height{
-  height: 50px;
-}
-
-.grid-item--height2{
-  height: 100px;
-}
-
-.grid-item--height3{
-  height: 150px;
-}
-
-.grid-item--height4{
-  height: 200px;
-}
-
-.grid-item--height5{
-  height: 250px;
+  object-fit: cover;
 }
 
 .camera img{
@@ -192,6 +157,8 @@ p {
 .hidden {
   display: none;
 }
+
+
 
 /* .draggable-text {
   position: fixed;
