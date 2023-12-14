@@ -189,6 +189,33 @@ interact('#camera').draggable({
   
 })
 
+//crochet
+interact('#crochet').draggable({
+  listeners: {
+    start (event) {
+      console.log(event.type, event.target)
+              // Show paragraph
+    const paragraph = document.getElementById('crochettext');
+    paragraph.style.display = 'inline';
+
+    },
+    move (event) {
+      crochetposition.x += event.dx
+      crochetposition.y += event.dy
+
+      event.target.style.transform =
+        `translate(${crochetposition.x}px, ${crochetposition.y}px)`
+    },
+    end(event){
+      console.log(event.type, event.target);
+        //hide paragraph
+      const paragraph = document.getElementById('crochettext');
+      paragraph.style.display = 'none';
+    }
+  }
+  
+})
+
  //crystals
  interact('#crystals').draggable({
   listeners: {
