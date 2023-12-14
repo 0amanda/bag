@@ -2278,7 +2278,6 @@ extendApi({
     }
     function onClick(e, data) {
         var state = getState$$1(data);
-        
         if (!state.useClick) {
             return;
         }
