@@ -27,7 +27,6 @@ h1{
 .allitems{
   padding: 1rem;
   width: 500px;
-  z-index: 1;
 }
 
 .bagframeall{
@@ -176,3 +175,43 @@ a:visited {
   top: 30%;
   transform: translateX(-50%);
 } */
+
+@media only screen and (max-width: 1024px) {
+
+.container{
+  position: absolute;
+  top: 60px;
+  left: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+  max-width: 800px;
+  background-color: antiquewhite;
+  width: 60%;
+  height: 700px;
+}
+
+.textcontainer{
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+
+}
+
+.allitems{
+  padding: 1rem;
+  width: 362px;
+}
+
+.bagframeall{
+  width: 500px;
+  padding: 1rem;
+}
+
+
+}
