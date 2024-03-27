@@ -25,12 +25,22 @@ const smallpurseposition = { x: 0, y: 0 }
 const soysauceposition = { x: 0, y: 0 }
 
 
+function playDragSound() {
+  const sound = document.getElementById('dragSound');
+  sound.play();
+}
 
+function playDropSound() {
+  const sound = document.getElementById('dropSound');
+  sound.play();
+}
 
 //camera
 interact('#camera').draggable({
     listeners: {
       start (event) {
+        event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
         console.log(event.type, event.target)
                 // Show paragraph
       const paragraph = document.getElementById('cameratext');
@@ -46,6 +56,7 @@ interact('#camera').draggable({
       },
       end(event){
         console.log(event.type, event.target);
+        playDropSound(); // Play sound when dragging ends
           //hide paragraph
         const paragraph = document.getElementById('cameratext');
         paragraph.style.display = 'none';
@@ -58,6 +69,8 @@ interact('#camera').draggable({
   interact('#bottle').draggable({
     listeners: {
       start (event) {
+        event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
         console.log(event.type, event.target)
                 // Show paragraph
       const paragraph = document.getElementById('bottletext');
@@ -73,6 +86,7 @@ interact('#camera').draggable({
       },
       end(event){
         console.log(event.type, event.target);
+        playDropSound(); // Play sound when dragging ends
           //hide paragraph
         const paragraph = document.getElementById('bottletext');
         paragraph.style.display = 'none';
@@ -85,6 +99,8 @@ interact('#camera').draggable({
   interact('#hairclip').draggable({
     listeners: {
       start (event) {
+        event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
         console.log(event.type, event.target)
                 // Show paragraph
       const paragraph = document.getElementById('haircliptext');
@@ -100,6 +116,7 @@ interact('#camera').draggable({
       },
       end(event){
         console.log(event.type, event.target);
+        playDropSound(); // Play sound when dragging ends
           //hide paragraph
         const paragraph = document.getElementById('haircliptext');
         paragraph.style.display = 'none';
@@ -112,6 +129,8 @@ interact('#camera').draggable({
   interact('#candy').draggable({
     listeners: {
       start (event) {
+        event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
         console.log(event.type, event.target)
                 // Show paragraph
       const paragraph = document.getElementById('candytext');
@@ -127,6 +146,7 @@ interact('#camera').draggable({
       },
       end(event){
         console.log(event.type, event.target);
+        playDropSound(); // Play sound when dragging ends
           //hide paragraph
         const paragraph = document.getElementById('candytext');
         paragraph.style.display = 'none';
@@ -139,6 +159,8 @@ interact('#camera').draggable({
   interact('#chapstick').draggable({
     listeners: {
       start (event) {
+        event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
         console.log(event.type, event.target)
                 // Show paragraph
       const paragraph = document.getElementById('chapsticktext');
@@ -154,6 +176,7 @@ interact('#camera').draggable({
       },
       end(event){
         console.log(event.type, event.target);
+        playDropSound(); // Play sound when dragging ends
           //hide paragraph
         const paragraph = document.getElementById('chapsticktext');
         paragraph.style.display = 'none';
@@ -166,6 +189,8 @@ interact('#camera').draggable({
  interact('#cookie').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('cookietext');
@@ -181,6 +206,7 @@ interact('#camera').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('cookietext');
       paragraph.style.display = 'none';
@@ -193,6 +219,8 @@ interact('#camera').draggable({
 interact('#crochet').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('crochettext');
@@ -208,6 +236,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('crochettext');
       paragraph.style.display = 'none';
@@ -220,6 +249,8 @@ interact('#crochet').draggable({
  interact('#crystals').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('crystalstext');
@@ -235,6 +266,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('crystalstext');
       paragraph.style.display = 'none';
@@ -247,6 +279,8 @@ interact('#crochet').draggable({
  interact('#fork').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('forktext');
@@ -262,6 +296,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('forktext');
       paragraph.style.display = 'none';
@@ -274,6 +309,8 @@ interact('#crochet').draggable({
  interact('#hairclip').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('haircliptext');
@@ -289,6 +326,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('haircliptext');
       paragraph.style.display = 'none';
@@ -301,6 +339,8 @@ interact('#crochet').draggable({
  interact('#handlotion').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('handlotiontext');
@@ -316,6 +356,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('handlotiontext');
       paragraph.style.display = 'none';
@@ -328,6 +369,8 @@ interact('#crochet').draggable({
  interact('#hellokitty').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('hellokittytext');
@@ -343,6 +386,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('hellokittytext');
       paragraph.style.display = 'none';
@@ -355,6 +399,8 @@ interact('#crochet').draggable({
  interact('#lippencil').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('lippenciltext');
@@ -370,6 +416,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('lippenciltext');
       paragraph.style.display = 'none';
@@ -382,6 +429,8 @@ interact('#crochet').draggable({
  interact('#lipstick').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+      playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('lipsticktext');
@@ -397,6 +446,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('lipsticktext');
       paragraph.style.display = 'none';
@@ -409,6 +459,8 @@ interact('#crochet').draggable({
  interact('#markerpens').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+      playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('markerpenstext');
@@ -424,6 +476,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('markerpenstext');
       paragraph.style.display = 'none';
@@ -436,6 +489,8 @@ interact('#crochet').draggable({
  interact('#mirror').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('mirrortext');
@@ -451,6 +506,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('mirrortext');
       paragraph.style.display = 'none';
@@ -464,6 +520,8 @@ interact('#crochet').draggable({
  interact('#mymelodysticker').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('mymelodystickertext');
@@ -479,6 +537,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('mymelodystickertext');
       paragraph.style.display = 'none';
@@ -492,6 +551,8 @@ interact('#crochet').draggable({
  interact('#nailfile').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('nailfiletext');
@@ -507,6 +568,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('nailfiletext');
       paragraph.style.display = 'none';
@@ -519,6 +581,8 @@ interact('#crochet').draggable({
  interact('#nailpolish').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('nailpolishtext');
@@ -534,6 +598,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('nailpolishtext');
       paragraph.style.display = 'none';
@@ -546,6 +611,8 @@ interact('#crochet').draggable({
  interact('#nails').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('nailstext');
@@ -561,6 +628,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('nailstext');
       paragraph.style.display = 'none';
@@ -574,6 +642,8 @@ interact('#crochet').draggable({
  interact('#numberpager').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('numberpagertext');
@@ -589,6 +659,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('numberpagertext');
       paragraph.style.display = 'none';
@@ -601,6 +672,8 @@ interact('#crochet').draggable({
  interact('#pen').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('pentext');
@@ -616,6 +689,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('pentext');
       paragraph.style.display = 'none';
@@ -628,6 +702,8 @@ interact('#crochet').draggable({
  interact('#receipt').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('receipttext');
@@ -643,6 +719,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('receipttext');
       paragraph.style.display = 'none';
@@ -655,6 +732,8 @@ interact('#crochet').draggable({
  interact('#smallpurse').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('smallpursetext');
@@ -670,6 +749,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('smallpursetext');
       paragraph.style.display = 'none';
@@ -682,6 +762,8 @@ interact('#crochet').draggable({
  interact('#soysauce').draggable({
   listeners: {
     start (event) {
+      event.target.style.opacity = 1; // Set opacity to 1 when dragging starts
+        playDragSound(); // Play sound when dragging starts
       console.log(event.type, event.target)
               // Show paragraph
     const paragraph = document.getElementById('soysaucetext');
@@ -697,6 +779,7 @@ interact('#crochet').draggable({
     },
     end(event){
       console.log(event.type, event.target);
+      playDropSound(); // Play sound when dragging ends
         //hide paragraph
       const paragraph = document.getElementById('soysaucetext');
       paragraph.style.display = 'none';
@@ -723,8 +806,6 @@ interact('#crochet').draggable({
     ondrop: handleDrop,
     ondragleave: function (event) {
       var draggableElement = event.relatedTarget;
-      
-
       draggableElement.style.opacity = 1;
     }
   });
@@ -759,20 +840,19 @@ function handleDrop(event) {
   
 $(function() {
   var frames = [
-    'risobagframes/frame_01.jpg',
-    'risobagframes/frame_02.jpg',
-    'risobagframes/frame_03.jpg',
-    'risobagframes/frame_04.jpg',
-    'risobagframes/frame_05.jpg',
-    'risobagframes/frame_06.jpg',
-    'risobagframes/frame_07.jpg',
-    'risobagframes/frame_08.jpg',
-    'risobagframes/frame_09.jpg',
-    'risobagframes/frame_10.jpg',
-    'risobagframes/frame_11.jpg',
-    'risobagframes/frame_12.jpg',
-    'risobagframes/frame_13.jpg',
-    'risobagframes/frame_14.jpg',
+    // 'risobagframes/frame_02.jpg',
+    // 'risobagframes/frame_03.jpg',
+    // 'risobagframes/frame_04.jpg',
+    // 'risobagframes/frame_05.jpg',
+    // 'risobagframes/frame_06.jpg',
+    // 'risobagframes/frame_07.jpg',
+    // 'risobagframes/frame_08.jpg',
+    // 'risobagframes/frame_09.jpg',
+    // 'risobagframes/frame_10.jpg',
+    // 'risobagframes/frame_11.jpg',
+    // 'risobagframes/frame_12.jpg',
+    // 'risobagframes/frame_13.jpg',
+    // 'risobagframes/frame_14.jpg',
     'risobagframes/frame_15.jpg',
     'risobagframes/frame_16.jpg',
     'risobagframes/frame_17.jpg',
@@ -785,9 +865,11 @@ $(function() {
     'risobagframes/frame_24.jpg',
     'risobagframes/frame_25.jpg',
     'risobagframes/frame_26.jpg',
+    'risobagframes/frame_01.jpg',
+
   ];
 
-    var index = 9;
+    var index = 6;
 
     $("#mySpriteSpin").spritespin({
       source: frames,

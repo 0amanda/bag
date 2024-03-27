@@ -14,9 +14,10 @@ h1{
   height: 100px;
   position: absolute;
   top: 20px;
-  left: 50%;
+  left: 40%;
 
 }
+
 
 .description{
   position: sticky;
@@ -26,16 +27,17 @@ h1{
 .allitems{
   padding: 1rem;
   width: 500px;
+  z-index: 1;
 }
 
 .bagframeall{
-  width: 500px;
+  width: 688px;
   padding: 1rem;
 }
 
 .container{
   position: absolute;
-  top: 300px;
+  top: 60px;
   left: 600px;
   display: flex;
   flex-wrap: wrap;
@@ -139,7 +141,8 @@ object-fit: cover;
 .dropzone {
   width: 300px;
   height: 300px;
-  mix-blend-mode: multiply;
+  mix-blend-mode:darken;
+  cursor: w-resize;
 }
 
 /* .drop-active {
@@ -148,11 +151,12 @@ object-fit: cover;
 
 p{
   position: absolute;
-  top: 50px;
+  top: 400px;
   font-family: 'Cute Font', sans-serif;
   font-size: 2em;
-  left: 50%;
+  left: 5%;
 }
+
 
 .hidden{
   display: none;
