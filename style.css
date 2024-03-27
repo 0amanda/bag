@@ -213,5 +213,11 @@ a:visited {
   padding: 1rem;
 }
 
+.draggable img{
+  object-fit: cover;
+  transform: scale(1.01);
+
+}
+
 
 }
